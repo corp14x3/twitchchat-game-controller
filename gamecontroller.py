@@ -14,10 +14,9 @@ class Bot(commands.Bot):
         print(f'User id is | {self.user_id}')
 
     async def event_message(self, message):
-        
         if message.echo:
             return
-
+        
         if message.content == "g":
            pyautogui.press("g")
 
